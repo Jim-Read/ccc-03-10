@@ -3,10 +3,10 @@ import os
 
 connection = psycopg2.connect(
     database="library_api",
-    user="app",
+    user="postgres",
     password=os.getenv("DB_PASSWORD"),
-    host="localhost",
-    port='5432'
+    host="54.252.236.254",
+    port="5432"
 )
 
 cursor = connection.cursor()
