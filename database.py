@@ -3,9 +3,10 @@ import os
 
 connection = psycopg2.connect(
     database="library_api",
-    user="postgres",
-    password=os.getenv("DB_PASSWORD"),
-    host="54.252.236.254",
+    user="app",
+    #password=os.getenv("DB_PASSWORD"),
+    password="Testing1"
+    host="locahost",
     port="5432"
 )
 
